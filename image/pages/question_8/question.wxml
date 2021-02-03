@@ -1,0 +1,74 @@
+<!--pages/question5.2.wxml-->
+<view bindtap="gotoQues" class="button-submit">
+  <van-notice-bar left-icon="volume-o" speed="10" text="{{question}}"></van-notice-bar>
+</view>
+<!--index.wxml-->
+
+
+<van-dialog id="van-dialog" />
+<view class="page-body">
+  <view class="page-tele">
+  <view>
+  <button style="width:120px" class="{{status == 1? 'dis-upper':'upper'}}" bindtap='gotoUpperQues'>{{'<'}}上一题</button>
+
+  <button style="width:120px" class="{{status == 1? 'dis-next':'next'}}" bindtap='gotoNextQues'>下一题{{'>'}}</button>
+  </view>
+  </view>
+  <view class="page-row">
+    <view class="element">
+      <!-- <text class="text" >{{name_valuevar text = "请准备。。。。。。。。。现在开始读题。。。。。。。。。。。。。。" + this.data.question;
+    this.textToSpeech(text)_bei}}</text> -->
+    <text class="text">{{name_value_bei}}</text>
+    </view>
+    <text class="fuhao">-</text>
+    <view class="element">
+      <text class="text">{{name_value_cut}}</text>
+    </view>
+    <text class="fuhao">=</text>
+    <view class="result">
+     <input model:value="{{a}}" class="textnormal" maxlength="3" type="number" bindinput="namea"  placeholder=""></input>
+     
+    </view>
+  </view>
+  <view class="page-row">
+    <view class="result">
+      <input model:value="{{a}}" class="textnormal" maxlength="3" type="number"  maxlength="3" disabled="true"/>
+    
+      <!-- <text class="textnormal" model:value="{{name_value1}}">{{name_value1}}</text> -->
+    </view>
+    <text class="fuhao">-</text>
+    <view class="element">
+      <text class="text">{{name_value_cut}}</text>
+    </view>
+    <text class="fuhao">=</text>
+    <view class="result">
+      <input class="textnormal" type="text"  model:value="{{b}}" maxlength="3"   type="number" bindinput="nameb"/>
+    </view>
+  </view>
+  <view class="page-row">
+    <view class="result">
+      <input class="textnormal" type="text"  model:value="{{b}}" maxlength="3" disabled="true"/>
+    </view>
+    <text class="fuhao">-</text>
+    <view class="element">
+      <text class="text">{{name_value_cut}}</text>
+    </view>
+    <text class="fuhao">=</text>
+    <view class="result">
+      <input class="textnormal" type="text"  model:value="{{c}}" maxlength="3"  type="number" bindinput="namec"/>
+    </view>
+  </view>
+  <view class="page-row">
+    <view class="result">
+      <input class="textnormal" type="text"  model:value="{{c}}" maxlength="3" disabled="true"/>
+    </view>
+    <text class="fuhao">-</text>
+    <view class="element">
+      <text class="text">{{name_value_cut}}</text>
+    </view>
+    <text class="fuhao">=</text>
+    <view class="result">
+      <input class="textnormal" type="text"  model:value="{{d}}" maxlength="3" type="number" bindinput="named"/>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<!--pages/index2/index2.wxml-->
+<van-dialog id="van-dialog" />
+<view>
+<van-notice-bar left-icon="volume-o" bindtap="testinfo" speed='20' text="第3.2题 请您在下图的圆中按钟表顺序填写数字1-12"/>
+	</view>
+	<view class="text">
+	<view class="viewL" bindtap="tolast">
+				<van-icon size="40rpx" name="arrow-left"></van-icon>
+		<text style="font-size:40rpx">上一题</text>
+	</view>
+	<view class="viewR" bindtap="tonext">
+
+		<text style="font-size:40rpx">下一题</text>
+				<van-icon size="40rpx" name="arrow"></van-icon>
+	</view>
+</view>
+<view class="question2">
+
+<image class="canvas_bgp"  src="https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/circle.png"></image>
+
+<canvas class="canvas" id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback">
+ <!-- <movable-area class="move_root" style="width:320px;height:568px">
+	<movable-view class="move_view_1" x="20" direction="all" >1</movable-view>
+	<movable-view class="move_view_2" x="40" direction="all" >2</movable-view>
+	<movable-view class="move_view_3" x="60" direction="all" >3</movable-view>
+	<movable-view class="move_view_4" x="80" direction="all" >4</movable-view>
+	<movable-view class="move_view_5" x="100" direction="all" >5</movable-view>
+	<movable-view class="move_view_6" x="120" direction="all" >6</movable-view>
+	<movable-view class="move_view_7" x="140" direction="all" >7</movable-view>
+	<movable-view class="move_view_8" x="160" direction="all" >8</movable-view>
+	<movable-view class="move_view_9" x="180" direction="all" >9</movable-view>
+	<movable-view class="move_view_10" x="200" direction="all" >10</movable-view>
+	<movable-view class="move_view_11" x="230" direction="all" >11</movable-view>
+	<movable-view class="move_view_12" x="255" direction="all" >12</movable-view>
+</movable-area>  -->
+</canvas>
+<view class="btn-area" style="position:relative">
+  <view class="bjimg" style="width: 100%;height:0;position:absolute;display:flex;justify-content:space-around;top:0;">
+  <image style="width: 40%;"  src='{{imgurl}}/clearkong.png'  mode="widthFix"></image>
+  <image style="width: 40%;" src='{{imgurl}}/tijiao.png' mode="widthFix"></image>
+</view>
+    <button class="button1" bindtap="cleardraw"style="width: 40%;opacity: 0;">清空</button>
+    <button class="button2" bindtap="next"style="width: 40%;opacity: 0;">提交</button>
+  </view>
+</view>

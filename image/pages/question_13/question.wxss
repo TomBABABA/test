@@ -1,0 +1,57 @@
+.form {
+  margin-top: 80px;
+}
+
+.info {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.info text {
+  font-size: 40rpx;
+}
+
+.info input {
+  text-align: right;
+}
+button::after{
+  border: none;
+}
+
+.upper {
+  float: left;
+  padding-left: 0px;
+  padding-top: 5px;
+  color: #0000ff;
+  border: none;
+  background-color: white;
+  border-color: white;
+}
+
+.next {
+  float: right;
+  padding-top: 5px;
+  padding-right: 0;
+  color: #0000ff;
+  border: none;
+  background-color: white;
+  border-color: white;
+}
+
+.button-submit {
+  margin-top: 10px;
+  padding-bottom: 40px;
+  background-color: #0066cc;
+  border-radius: 200px;
+  color: white;
+  font-family: 黑体;
+  font-size: x-large;
+  text-align: center;
+}
+
+

@@ -1,0 +1,97 @@
+/* pages/question_b1/question_b1.wxss */
+view {
+  box-sizing: border-box;
+}
+.container{
+  margin: 0rpx auto;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+  position: absolute;
+  width: 90rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  border: 3rpx solid #070606;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.buttonbg{
+  background-color: #e9f1f6;
+  border: 5rpx solid #faca82;
+  width: 100%;
+  height: 1300rpx;
+  margin: 0rpx auto;
+}
+.container{
+  margin: 0 auto;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.text{
+  width:100%;
+  height: 60rpx;
+  margin:25rpx auto;
+  color: black;
+}
+.clearBtn{
+  width:60rpx;
+  height:60rpx;
+  float: right;
+  padding:0;
+  margin:0 60rpx;
+  line-height:60rpx;
+  font-size:30rpx;
+  background:none;
+}
+.clearBtn image{
+  width:100%;
+  height:100%;
+}
+.buttonshe{
+  margin-top: 100rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.viewR{
+  display: flex;
+  flex-direction: row;
+
+  height: 60rpx;
+  float: right;
+  margin: 0 0rpx;
+}
+.viewL{
+  display: flex;
+  flex-direction: row;
+  width: 250rpx;
+  height: 60rpx;
+  float: left;
+  margin: 0 0rpx;
+  margin-left: 0；
+}
+.tapimage{
+  width: 80rpx;
+  height: 80rpx;
+  
+}
+.divLine{
+ display:flex;
+ background: #a6a6a6;
+ width:100%;
+ height: 4rpx;
+ margin-top:25rpx auto;
+}
+
+

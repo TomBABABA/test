@@ -1,0 +1,78 @@
+<view bindtap="gotoQues">
+  <van-notice-bar left-icon="volume-o" speed="10" text="{{question}}"></van-notice-bar>
+</view>
+<van-dialog id="van-dialog" />
+<view>
+  <button style="width:120px" class="{{status == 1? 'dis-upper':'upper'}}" bindtap='gotoUpperQues'>{{'<'}}上一题</button>
+</view>
+<view>
+  <button style="width:120px" class="{{status == 1? 'dis-next':'next'}}" bindtap='gotoNextQues'>下一题{{'>'}}</button>
+</view>
+
+<view class="paly-icon1">
+  <text style="font-size:30px;margin: auto;"> 语义类别提示</text>
+</view>
+<view>
+  <view class="father-list">
+    <view class="son-item" data-index="1" bindtap="showHint1">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示1</text>
+    </view>
+    <view class="son-item" data-index="2" bindtap="showHint1">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示2</text>
+    </view>
+    <view class="son-item" data-index="3" bindtap="showHint1">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示3</text>
+    </view>
+    <view class="son-item" data-index="4" bindtap="showHint1">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示4</text>
+    </view>
+    <view class="son-item" data-index="5" bindtap="showHint1">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示5</text>
+    </view>
+  </view>
+  <view class="paly-icon2" bindtap="showHint2">
+    <text style="font-size:30px;margin: auto;"> 多选提示</text>
+  </view>
+
+  <view class="father-list">
+    <view class="son-item" data-index="1" bindtap="showHint2">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示1</text>
+    </view>
+    <view class="son-item" data-index="2" bindtap="showHint2">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示2</text>
+    </view>
+    <view class="son-item" data-index="3" bindtap="showHint2">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示3</text>
+    </view>
+    <view class="son-item" data-index="4" bindtap="showHint2">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示4</text>
+    </view>
+    <view class="son-item" data-index="5" bindtap="showHint2">
+      <mp-icon icon="sticker" color="black" size="{{30}}" />
+      <text>提示5</text>
+    </view>
+  </view>
+</view>
+
+<view style="position:relative">
+<view class="bjimg" style="width: 80%;height:0;position:absolute;top:0;left:10%">
+  <image style="width: 100%;"  src='{{imgurl}}/ksly.png'  mode="widthFix"></image>
+</view>
+  <button bindtap='touchdown_plugin'
+    class="{{status==0? 'button-icon':'button-dis-icon'}}" style="opacity: 0;">{{status==0? '开始录音':'录音中...'}}</button>
+</view>
+<view style="position:relative">
+            <view class="bjimg" style="width: 80%;height:0;position:absolute;top:0;left:10%">
+  <image style="width: 100%;"  src='{{imgurl}}/jsly.png'  mode="widthFix"></image>
+</view>
+  <button bindtap='touchup_plugin' class="button-end" style="opacity: 0;">结束录音</button>
+</view>

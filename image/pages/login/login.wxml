@@ -1,0 +1,35 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+<view class="bjimg">
+  <image style="width: 100%;"  src='{{imgurl}}/logbg.png' mode="widthFix"></image>
+</view>
+<view class="form">
+  <form bindsubmit="formSubmit">
+    <view class='info'>
+    <image style="width: 7%;"  src='{{imgurl}}/logxm.png' mode="widthFix"></image>
+      <text>姓名</text>
+      <input name="name" type='text' placeholder-style='font-size:40rpx;' placeholder='请输入你的姓名'></input>
+    </view>
+    <view class='info'>
+        <image style="width: 7%;"  src='{{imgurl}}/lognl.png' mode="widthFix"></image>
+      <text>年龄</text>
+      <input name="age" type='text' placeholder-style='font-size:40rpx;' placeholder='请输入你的年龄' type="number"></input>
+    </view>
+    <view class='info'>
+        <image style="width: 7%;" src='{{imgurl}}/logjy.png'  mode="widthFix"></image>
+      <text>教育年限</text>
+      <input name="education" type='text' placeholder-style='font-size:40rpx;' placeholder='请输入受教育年数' type="number"></input>
+    </view>
+    <view class='info'>
+        <image style="width: 7%;" src='{{imgurl}}/logxb.png'  mode="widthFix"></image>
+      <text>性别</text>
+      <van-radio-group value="{{ radio }}" bind:change="onChange">
+        <van-radio name="1" checked-color="#07c160" label-position="left">男</van-radio>
+        <van-radio name="2" checked-color="#07c160" label-position="left">女</van-radio>
+      </van-radio-group>
+    </view>
+    <button class="button-submit" form-type='submit'></button>
+  </form>
+</view>
+</view>
+

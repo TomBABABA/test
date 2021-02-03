@@ -1,0 +1,24 @@
+<!--pages/seconde_index/seconde_index.wxml-->
+<view class="container">
+<view class="bjimg" style="width: 100%;height: 0;">
+  <image style="width: 100%;" src='{{imgurl}}/xzymbg.png'  mode="widthFix"></image>
+</view>
+  <text class="directext"></text>
+  <view class="bottonshe">
+      <view class="marginview">
+      <view class="bjimg" style="width: 60%;height: 0;margin:0 auto;">
+  <image style="width: 100%;" src='{{imgurl}}/xzymmo.png'  mode="widthFix"></image>
+</view>
+        <van-button round custom-style="border: 0;background: none;font-family:黑体;font-size:x-large;width:500rpx;height:150rpx ;color:#fff" bindtap="directoMoca">
+         
+      </van-button>
+      </view>
+      <view class="marginview">
+            <view class="bjimg" style="width: 60%;height: 0;margin:0 auto;">
+  <image style="width: 100%;" src='{{imgurl}}/xzymjl.png'  mode="widthFix"></image>
+</view>
+        <van-button round custom-style="border: 0;background: none;font-family:黑体;font-size:x-large;width:500rpx;height:150rpx;color:#fff" bindtap="directoSDS">
+      </van-button>
+      </view>
+    </view>
+</view>

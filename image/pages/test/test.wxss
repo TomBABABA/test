@@ -1,0 +1,94 @@
+/* pages/test/test.wxss */
+.page {
+  padding: 20rpx;
+}
+.page__bd {
+  padding: 20rpx;
+}
+.my-choosebox {
+  display: block;
+  margin-bottom: 20rpx;
+}
+.toindex-btn {
+  margin-top: 20rpx;
+  display:inline-block;
+  line-height:2.3;
+  font-size:13px;
+  font-size: 60rpx;
+  color: #fff;
+  background-image: radial-gradient( #78bbf1,#4086fe);
+  border-radius: 50%;
+  width: 150rpx;
+  height: 150rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 150rpx;
+}
+.page_ft .textnext{
+  background-image: radial-gradient( #78bbf1,#4086fe);
+  border-radius: 140rpx;
+  width: 60%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 60rpx;
+  font-weight: 600;
+  line-height: 90rpx;
+}
+.page_ft .textnext i{
+  color: #4086fe;
+  font-size: 102rpx;
+  font-weight: 600;
+  line-height: 90rpx;
+  display: inline-block;
+  width: 102rpx;
+  height: 102rpx;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: -55rpx;
+  top: 3rpx;
+}
+/* <!--home--> */
+.inaver._30f2b4d {
+  box-sizing: border-box;
+  padding-top: 44rpx;
+  width: 100vw;
+  height: 160rpx;
+  display: flex;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+}
+ 
+.inaver .left._30f2b4d {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 8rpx;
+}
+ 
+.inaver .left image.icon._30f2b4d {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 10rpx;
+  margin: 10rpx;
+}
+ 
+.inaver .center._30f2b4d {
+  height: 100rpx;
+  line-height: 100rpx;
+  flex: 1;
+  margin: 8rpx;
+}
+ 
+.inaver .right._30f2b4d {
+  width: 240rpx;
+  height: 100rpx;
+  margin: 8rpx;
+}
+ 
+.protect-inaver._30f2b4d {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 160rpx;
+}

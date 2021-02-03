@@ -1,0 +1,17 @@
+<!--pages/question5.2.wxml-->
+<view bindtap="gotoQues" class="button-submit">
+  <van-notice-bar left-icon="volume-o" speed="10" text="{{question}}"></van-notice-bar>
+</view>
+<van-dialog id="van-dialog" />
+<view>
+  <button style="width:120px" class="{{status == 1? 'dis-upper':'upper'}}" bindtap='gotoUpperQues'>{{'<'}}上一题</button>
+</view>
+<view>
+  <button style="width:120px" class="{{status == 1? 'dis-next':'next'}}" bindtap='gotoNextQues'>下一题{{'>'}}</button>
+</view>
+<button class="play-icon" bindtap="startquestionAudio" disabled="{{isDisabled}}">
+    <image style="width: 50%;position:relative;left:25%;top:10%;" src='{{imgurl}}/bofang.png' mode="widthFix"></image>
+</button>
+<button class="button-ensure" bindtap="tapOne">
+  <text>数字“1”</text>
+</button>

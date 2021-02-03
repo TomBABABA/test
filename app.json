@@ -1,0 +1,99 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/question_1/question_1",
+    "pages/question_2/question_2",
+    "pages/question_4.1/question",
+    "pages/question_4.2/question",
+    "pages/question_4.3/question",
+    "pages/question_5/question",
+    "pages/question_6.1/question",
+    "pages/question_6.2/question",
+    "pages/question_7/question",
+    "pages/question_9.1/question",
+    "pages/question_9.2/question",
+    "pages/question_10/question",
+    "pages/question_11.1/question",
+    "pages/question_11.2/question",
+    "pages/question_11.3/question",
+    "pages/question_12/question",
+    "pages/question_13/question",
+    "pages/moca_Sds_index/moca_Sds_index",
+    "pages/moca_index/moca_index",
+    "pages/sds_index/sds_index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/results/results",
+    "pages/home/home",
+    "pages/question_b1/question_b1",
+    "pages/question_b2/question",
+    "pages/question_b3/question",
+    "pages/question_b4/question",
+    "pages/question_b5/question",
+    "pages/question_b6.1/question",
+    "pages/question_b6.2/question",
+    "pages/question_b6.3/question",
+    "pages/question_b7/question",
+    "pages/question_b8/question",
+    "pages/question_b9.1/question",
+    "pages/question_b9.2/question",
+    "pages/question_b9.3/question",
+    "pages/question_b9.4/question",
+    "pages/question_b10.1/question_b10.1",
+    "pages/question_b10.2/question_b10.2",
+    "pages/login/login",
+    "pages/results_moca/results_moca"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
+        "text": "答题"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "记录"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "usingComponents": {
+    "van-button": "/miniprogram_npm/@vant/weapp/button/index",
+    "van-notice-bar": "/miniprogram_npm/@vant/weapp/notice-bar/index",
+    "van-icon": "/miniprogram_npm/@vant/weapp/icon/index",
+    "van-dialog": "/miniprogram_npm/@vant/weapp/dialog/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-radio": "@vant/weapp/radio/index",
+  "van-radio-group": "@vant/weapp/radio-group/index"
+  }
+}

@@ -1,0 +1,39 @@
+<!--pages/question2/question2.wxml-->
+<van-dialog id="van-dialog" />
+<view bindtap="popConfirm">
+  <van-notice-bar left-icon="volume-o" speed="10" text="{{question}}"></van-notice-bar>
+</view>
+
+<view>
+  <button style="width:120px" class="{{status == 1? 'no_shang':'shang'}}" bindtap='gotoPage1'>{{'<'}}上一题</button>
+</view>
+<view>
+  <button style="width:120px" class="{{status == 1? 'no_xia':'xia'}}" bindtap='gotoPage2'>下一题{{'>'}}</button>
+</view>
+
+<view>
+  <view class="play-icon" bindtap="popConfirm1" style="text-align: center;">
+  <image style="width: 50%;position:relative;left:25%;top:10%;" src='{{imgurl}}/bofang.png' mode="widthFix"></image>
+<view>
+</view>
+  </view>
+</view>
+
+
+        <view style="position:relative">
+            <view class="bjimg" style="width: 80%;height:0;position:absolute;top:0;left:10%">
+  <image style="width: 100%;"  src='{{imgurl}}/ksly.png'  mode="widthFix"></image>
+</view>
+          <button bindtap='touchdown_plugin' class="{{status==0? 'button-submit':'no-clicking'}}" style="opacity: 0;">
+  {{status==1? '录音中...':'开始录音'}}</button>
+        </view>
+<view style="position:relative">
+            <view class="bjimg" style="width: 80%;height:0;position:absolute;top:0;left:10%">
+  <image style="width: 100%;"  src='{{imgurl}}/jsly.png'  mode="widthFix"></image>
+</view>
+  <button bindtap='touchup_plugin' class="button-submit" style="opacity: 0;">结束录音</button>
+</view>
+<!-- <view>
+  <button bindtap='playRecord' class="button-submit">播放录音</button>
+</view> -->
+

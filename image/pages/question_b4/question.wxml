@@ -1,0 +1,39 @@
+<view bindtap="gotoQues">
+  <van-notice-bar left-icon="volume-o" speed="10" text="{{question}}"></van-notice-bar>
+</view>
+<van-dialog id="van-dialog" />
+<form bindsubmit="formSubmit">
+  <button style="width:120px" class="upper" bindtap='gotoUpperQues'>{{'<'}}上一题</button>
+  <button style="width:120px" class="next" form-type='submit'>下一题{{'>'}}</button>
+
+  <view class="info" style="margin-top: 80px;">
+    <text>当前年份</text>
+    <input name="year" type='text' placeholder-style='font-size:40rpx;' placeholder='今年是哪一年？'></input>
+  </view>
+
+  <view class='info'>
+    <text>当前月份</text>
+    <input name="month" type='text' placeholder-style='font-size:40rpx;' placeholder='现在是几月份？'></input>
+  </view>
+
+  <view class='info'>
+    <text>当前日期</text>
+    <input name="day" type='text' placeholder-style='font-size:40rpx;' placeholder='今天是几号？'></input>
+  </view>
+
+  <view class='info'>
+    <text>当前周几</text>
+    <input name="week" type='text' placeholder-style='font-size:40rpx;' placeholder='今天是周几？'></input>
+  </view>
+
+  <view class='info'>
+    <text>当前地点</text>
+    <input name="loc" type='text' placeholder-style='font-size:40rpx;' placeholder='您现在在哪？'></input>
+  </view>
+
+  <view class='info'>
+    <text>当前城市</text>
+    <input name="city" type='text' placeholder-style='font-size:40rpx;' placeholder='您目前居住的城市？'></input>
+  </view>
+
+</form>

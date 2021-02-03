@@ -1,0 +1,157 @@
+/* pages/question_10/question.wxss */
+button::after{border:none;}
+.sound-recording {
+  background-color: rgb(240, 255, 215);
+  margin: 10rpx 30rpx;
+  border-radius: 20rpx;
+  padding: 5rpx 0rpx;
+}
+
+.btn {
+  margin: 0rpx 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn .show {
+  padding: 10rpx;
+  width: 200rpx;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(178, 228, 228);
+  border-radius: 20rpx;
+  border: 5rpx solid rgb(127, 204, 214);
+}
+
+.btn .hide {
+  padding: 10rpx;
+  width: 200rpx;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rpx;
+  border: 5rpx solid #eee;
+  pointer-events: none;
+  background-color: rgba(167, 162, 162, 0.445);
+}
+
+.time {
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.progress {
+  margin: 20rpx;
+}
+
+.play {
+  margin: 0rpx 20rpx;
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  line-height: 60rpx;
+  font-size: 25rpx;
+}
+
+/* .anniu {
+  margin: 10rpx 50rpx;
+  display: flex;
+} */
+
+/* .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: rgb(178, 228, 228);
+  border: 5rpx solid rgb(127, 204, 214);
+} */
+
+.jump-hover {
+  transform: scale(0.9);
+}
+
+/*禁止点击*/
+
+.no-clicking {
+  margin: 30px 30px 15px 15px;
+  background-color: #999ca0;
+  border-radius: 200px;
+  color: white;
+  font-family: 黑体;
+  font-size: x-large;
+  text-align: center;
+  pointer-events: none;
+}
+
+/*下一题*/
+.button-submit {
+  margin: 30px 30px 15px 15px;
+  background-color: #0066cc;
+  border-radius: 200px;
+  color: white;
+  font-family: 黑体;
+  font-size: x-large;
+  text-align: center;
+}
+
+.shang{
+  float:left;
+  /* position: absolute; */
+  /* margin-left:0px;
+  padding-left: 0px; */
+  padding-top:5px;
+  /* padding-left:0; */
+  color:#0000ff;
+  font-size: 16px;
+  background-color: white;
+  border-color: white;
+
+}
+.xia{
+  float:right;
+  /* margin-right:5px; */
+  padding-top:5px;
+  padding-right:0;
+  color:#0000ff;
+  font-size:16px;
+  background-color: white;
+  border-color: white;
+
+}
+.pingbi{
+  color: #999ca0;
+  background-color: white;
+  border-color: white;
+  pointer-events: none;
+}
+
+.no-click1{
+  float:left;
+  padding-top:5px;
+  color: #999ca0;
+  background-color: white;
+  border-color: white;
+  pointer-events: none;
+  font-size: 16px;
+}
+
+.no-click2{
+  float:right;
+  padding-top:5px;
+  color: #999ca0;
+  background-color: white;
+  border-color: white;
+  pointer-events: none;
+  font-size: 16px;
+}

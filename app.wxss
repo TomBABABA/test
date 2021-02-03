@@ -1,0 +1,48 @@
+/**app.wxss**/
+.container{
+  height:100%;
+  display: flex;
+  background-color: #e9f1f6;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bc_green{
+    background-color: #09BB07;
+}
+.bc_red{
+    background-color: #F76260;
+}
+.bc_blue{
+    background-color: #10AEFF;
+}
+.bc_yellow{
+    background-color: #FFBE00;
+}
+.bc_gray{
+    background-color: #C9C9C9;
+}
+/* gsy */
+.toplaba .van-icon.van-icon-volume-o{
+    color: black;
+}
+.van-notice-bar .van-icon.van-icon-volume-o{
+    color: black;
+}
+.xia, .shang, .next, .upper, .viewR, .viewL{
+    color: black !important;
+}
+.van-notice-bar__content{
+    color: black;
+}
+page{
+    padding-top: 170rpx;
+}
+.play-icon{
+    border: none !important;
+}
+.toplaba.van-notice-bar{
+  color:white;
+}

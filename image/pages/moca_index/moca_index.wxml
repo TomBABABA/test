@@ -1,0 +1,25 @@
+<!--pages/third_index/third_index.wxml-->
+<view class="container">
+<view class="bjimg" style="width: 100%;height: 0;">
+  <image style="width: 100%;" src='{{imgurl}}/mobg.png'  mode="widthFix"></image>
+</view>
+  <text class="directext"></text>
+  <view class="bottonshe">
+      <view class="marginview">
+               <view class="bjimg" style="width: 100%;height: 0;">
+  <image style="width: 100%;" src='{{imgurl}}/mobz.png'  mode="widthFix"></image>
+</view>
+        <van-button round custom-style="border: 0;background: none;font-family:黑体;font-size:x-large;width:200rpx;height:200rpx "  bindtap="directoMocaStandard">
+
+      </van-button>
+      </view>
+      <view class="marginview">
+                       <view class="bjimg" style="width: 100%;height: 0;">
+  <image style="width: 100%;" src='{{imgurl}}/mojc.png'  mode="widthFix"></image>
+</view>
+        <van-button round custom-style="border: 0;background: none;font-family:黑体;font-size:x-large;width:200rpx;height:200rpx " color="linear-gradient(to right, #60f3ab, #00ccbc)" bindtap="directoMocaBase">
+
+      </van-button>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,65 @@
+/* pages/question_3.3/question_3.3.wxss */
+/* pages/index3/index3.wxss */
+.question3{
+  display: flex;
+  flex-direction: column;
+} 
+.viewR{
+  display: flex;
+  flex-direction: row;
+  width: 180rpx;
+  height: 60rpx;
+  float: right;
+  margin: 0 50rpx;
+}
+.viewL{
+  display: flex;
+  flex-direction: row;
+  width: 250rpx;
+  height: 60rpx;
+  float: left;
+  margin: 0 50rpx;
+}
+.text{
+  width: 100%;
+  height: 70rpx;
+  margin: 15rpx auto;
+  color:blue;
+}
+canvas{
+  /* border:1px solid black; */
+	/*位置绝对*/
+  width: 80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+}
+
+.btn-area{
+  flex: 1;
+  display: flex;
+  margin-top: 100rpx;
+}
+
+.button1{
+  color: azure;
+  background-color: blue;
+}
+/* .move_root{
+  pointer-events:none 
+}
+.move_view_1{
+  pointer-events:auto
+} */
+.canvas_bgp{
+	/*位置绝对*/
+	position: absolute;
+  width:80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  margin-top: 10rpx;
+  z-index: -1;
+	}

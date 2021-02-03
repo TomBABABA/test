@@ -1,0 +1,69 @@
+/* pages/login/login.wxss */
+.form {
+  margin-top: 165px;
+}
+.bjimg{
+  width: 100%; 
+  height: 0;
+  position: absolute;
+  top: 146rpx;
+  z-index: -1;
+}
+
+.info {
+  width: 86%;
+  margin: 20px auto;
+  background: #fff;
+  display: flex;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-content: center;
+  align-items: center;
+  border: 1rpx solid #0680b7;
+  line-height: 111rpx;
+  border-radius: 5rpx;
+}
+.info image{
+  margin-right: 25rpx;
+}
+
+.info text {
+  font-size: 40rpx;
+  font-weight: 300;
+  width: 203rpx;
+  text-align: left;
+  font-weight: 500;
+}
+
+.info input {
+  text-align: left;
+}
+.directext{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  font-size: xx-large;
+}
+.container{
+  margin: 0rpx auto;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+van-radio-group{
+  display: flex;
+}
+van-radio-group van-radio{
+  font-size: 40rpx;
+margin-left: 29rpx;
+}
+.button-submit{
+  width: 250rpx;
+  height: 250rpx;
+  float: right;
+  opacity: 0;
+}

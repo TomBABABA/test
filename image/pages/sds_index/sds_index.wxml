@@ -1,0 +1,24 @@
+<!--pages/forth_index/forth_index.wxml-->
+<view class="container">
+<view class="bjimg" style="width: 100%;height: 0;">
+  <image style="width: 100%;" src='{{imgurl}}/jlbg.png'  mode="widthFix"></image>
+</view>
+  <text class="directext"></text>
+  <view class="bottonshe">
+      <view class="marginview">
+      <view class="bjimg" style="width: 100%;height: 0;">
+  <image style="width: 100%;" src='{{imgurl}}/jljl.png'  mode="widthFix"></image>
+</view>
+        <van-button round custom-style="border: 0;background: none;font-family:黑体;font-size:x-large;width:200rpx;height:200rpx "  data-testId='102' bindtap="toTestPage">
+      </van-button>
+      </view>
+      <view class="marginview">
+      <view class="bjimg" style="width: 100%;height: 0;">
+  <image style="width: 100%;" src='{{imgurl}}/jlyy.png'  mode="widthFix"></image>
+</view>
+        <van-button round custom-style="border: 0;background: none;font-family:黑体;font-size:x-large;width:200rpx;height:200rpx "  data-testId="104" bindtap="toTestPage">
+      </van-button>
+      </view>
+    </view>
+</view>
+

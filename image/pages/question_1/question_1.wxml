@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    <view style="width:100%" bindtap="testinfo">
+      <van-notice-bar speed="10" left-icon="volume-o" text="{{question}}"/>
+    </view>
+    <van-dialog id="van-dialog" />
+    <view class="text">
+    
+      <view class="viewL" bindtap="tolast">
+        <van-icon size="40rpx" name="arrow-left" />
+        <text style="font-size:40rpx;">返回首页</text>
+    </view>
+    <view class="viewR" bindtap="tonext">
+      <text style="font-size:40rpx;">下一题</text>
+      <van-icon size="40rpx" name="arrow" />
+    </view>
+    </view>
+    <view class="buttonbg">
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[0]}}rpx;margin-left:{{left_distance[0]}}rpx;" data-info="{{list[0]}}" class="circle">
+      {{list[0]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[1]}}rpx;margin-left:{{left_distance[1]}}rpx;" data-info="{{list[1]}}" class="circle">
+      {{list[1]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[2]}}rpx;margin-left:{{left_distance[2]}}rpx;" data-info="{{list[2]}}" class="circle">
+      {{list[2]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[3]}}rpx;margin-left:{{left_distance[3]}}rpx;" data-info="{{list[3]}}" class="circle">
+      {{list[3]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[4]}}rpx;margin-left:{{left_distance[4]}}rpx;" data-info="{{list[4]}}" class="circle">
+      {{list[4]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[5]}}rpx;margin-left:{{left_distance[5]}}rpx;" data-info="{{list[5]}}" class="circle">
+      {{list[5]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[6]}}rpx;margin-left:{{left_distance[6]}}rpx;" data-info="{{list[6]}}" class="circle">
+      {{list[6]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[7]}}rpx;margin-left:{{left_distance[7]}}rpx;" data-info="{{list[7]}}" class="circle">
+      {{list[7]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[8]}}rpx;margin-left:{{left_distance[8]}}rpx;" data-info="{{list[8]}}" class="circle">
+      {{list[8]}}
+    </button>
+    <button type="handleClicks" bindtap="handleClicks" style="margin-top:{{top_distance[9]}}rpx;margin-left:{{left_distance[9]}}rpx;" data-info="{{list[9]}}" class="circle">
+      {{list[9]}}
+    </button>
+  </view>
+    <view class="text">
+    <text style="font-size:35rpx;float:left">你的序列:{{string}}</text>
+    <button bindtap="deleteOne" class="clearBtn"><image src="https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/deleteone.png" mode="aspectFit"></image></button>
+    </view>
+</view>

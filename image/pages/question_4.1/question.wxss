@@ -1,0 +1,71 @@
+/* pages/newMusic/index.wxss */
+button::after{border:none}
+
+.button-submit {
+  margin: 30px 30px 15px 15px;
+  background-color: #0066cc;
+  border-radius: 200px;
+  color: white;
+  font-family: 黑体;
+  font-size: x-large;
+  text-align: center;
+}
+.shang{
+  float:left;
+  /* position: absolute; */
+  /* margin-left:10px; */
+  padding-left: 0px;
+  padding-top:5px;
+  color:#0000ff;
+  background-color: white;
+  border-color: white;
+
+}
+.xia{
+  float:right;
+  /* margin-right:5px; */
+  padding-top:5px;
+  padding-right:0;
+  color:#0000ff;
+  /* font-size:16px; */
+  background-color: white;
+  border-color: white;
+
+}
+
+.no-clicking {
+  margin: 30px 30px 15px 15px;
+  background-color: #999ca0;
+  border-radius: 200px;
+  color: white;
+  font-family: 黑体;
+  font-size: x-large;
+  text-align: center;
+  pointer-events: none;
+}
+
+.no_shang{
+  float:left;
+  /* position: absolute; */
+  /* margin-left:10px; */
+  padding-top:5px;
+  padding-left:0;
+  color:#999ca0;
+  font-size: 16px;
+  background-color: white;
+  border-color: white;
+  pointer-events: none;
+}
+.no_xia{
+  float:right;
+  /* margin-right:5px; */
+  padding-top:5px;
+  padding-right:0;
+  color:#999ca0;
+  font-size:16px;
+  background-color: white;
+  border-color: white;
+  pointer-events: none;
+}
+   
+

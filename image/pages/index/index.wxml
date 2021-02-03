@@ -1,0 +1,19 @@
+<!--pages/index/index.wxml-->
+<!-- 需要使用 button 来授权登录 -->
+<view class="container">
+<view class="bjimg">
+  <image style="width: 100%;"  src='{{imgurl}}/indexbg.png' mode="widthFix"></image>
+</view>
+<view class="bjtext">
+  <text class="directext">测试系统</text>
+</view>
+
+
+    <button class="buttonsty" wx:if="{{!islogin}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    <view wx:else>请升级微信版本</view>
+  <view class="text">
+    <i> </i>
+    <text style="color:#000;"><input type="checkbox" name="vehicle" value="Bike" />请进行授权登录。如果不授权登录的话，则无法进行测试</text>
+   </view>
+</view>
+

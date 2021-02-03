@@ -1,0 +1,38 @@
+<!--pages/page2/page2.wxml-->
+<view class="container">  
+  <view style="width:100%" bindtap="testinfo">
+      <van-notice-bar speed="10" left-icon="volume-o" text="第二题 请在图片下方的画板上画出图片中物体的形状"/>
+    </view>
+    <view class="text">
+      <view class="viewL" bindtap="tolast">
+        <van-icon size="40rpx" name="arrow-left" />
+        <text style="font-size:40rpx;">上一题</text>
+    </view>
+    <view class="viewR" bindtap="tonext">
+      <text style="font-size:40rpx;">下一题</text>
+      <van-icon size="40rpx" name="arrow" />
+    </view>
+    </view>
+  <image style="width: 400rpx; height: 300rpx; background-color: #eeeeee;margin-top:30rpx;margin-bottom:20rpx;"  src="https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/cube.png" mode="scaleToFill"></image>
+  <view class="canvasBorderone">
+    <view class="controller">
+      <button bindtap="clearCanvas" style=" margin:0 70rpx;" class="clearBtn {{isDelete ? 'selected' : ''}}"><image src="https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/delete.png" mode="aspectFit"></image></button>
+     <button bindtap="eraser" style=" margin:0 0rpx;" class="clearBtn {{isEraser ? 'selected' : ''}}"><image src="https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/eraser.png" mode="aspectFit"></image></button>
+  </view>
+    <view class="canvasBordertwo">
+    <canvas canvas-id="canvas" disable-scroll='false'
+    bindtouchstart="beginStroke"
+    bindtouchmove="moveStroke"
+    bindtouchend="endStroke"
+    style="width:{{canvasWidth}}rpx;height:{{canvasHeight}}rpx;"
+   ></canvas>
+   </view>
+   <view class="text">
+    <van-icon name="info-o" color="red" size="50rpx"/>
+    <text style="color:red;">右上角图标分别为橡皮擦和清空画板按钮</text>
+   </view>
+  </view>
+<!-- <view class="buttonshe">
+  <van-button round type="info" bindtap="uploadCanvasImg" size="large" custom-style="font-family: 黑体;font-size:x-large;width:500rpx;background-color: #0066cc;">我已确认,提交!</van-button>
+</view> -->
+</view>

@@ -1,0 +1,64 @@
+/* pages/question_3.1/question_3.1.wxss */
+
+.question1{
+  display: flex;
+  flex-direction: column;
+} 
+.notice_bar{
+  width: 100%;
+  line-height: 50rpx;
+}
+.canvas{
+  padding-top: 10rpx;
+  border:1px solid black;
+  width: 80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:0 auto; 
+} 
+ /* .canvas_bgp{
+	position: absolute;
+  width:80%;
+  height: 600rpx;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  margin-top: 202rpx;
+  z-index: -1;
+  }  */
+  .btn-area{
+    flex: 1;
+    display: flex;
+    margin-top: 100rpx;
+  }
+.viewR{
+  display: flex;
+  flex-direction: row;
+  width: 180rpx;
+  height: 60rpx;
+  float: right;
+  margin: 0 50rpx;
+}
+.viewL{
+  display: flex;
+  flex-direction: row;
+  width: 250rpx;
+  height: 60rpx;
+  float: left;
+  margin: 0 50rpx;
+}
+.text{
+  width: 100%;
+  height: 70rpx;
+  margin: 15rpx auto; 
+  color:blue;
+}
+.button1{
+  color: azure;
+  background-color: blue;
+}
+.button2{
+  color: azure;
+  background-color: blue;
+}

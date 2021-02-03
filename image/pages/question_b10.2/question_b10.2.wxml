@@ -1,0 +1,34 @@
+<!--pages/question_b10.2/question_b10.2.wxml-->
+<!--题目轮播-->
+<van-dialog id="van-dialog" />
+<view bindtap="popConfirm">
+  <van-notice-bar left-icon="volume-o" speed="10" text="{{question}}"></van-notice-bar>
+</view>
+<!--上下题跳转-->
+<view>
+  <button style="width:120px" class="{{status==1? 'no_shang':'shang'}}" bindtap='gotoPage1'>{{'<'}}上一题</button>
+</view>
+<!--题目图片-->
+<image  src='https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/circubenum1.png' class="imagescale">  </image>  
+<image  src='https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/circubenum2.png' class="imagescale">  </image>  
+<image  src='https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/circubenum3.png' class="imagescale">  </image>  
+<image  src='https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/circubenum4.png' class="imagescale">  </image>  
+        <view style="position:relative">
+            <view class="bjimg" style="width: 80%;height:0;position:absolute;top:0;left:10%">
+  <image style="width: 100%;"  src='{{imgurl}}/ksly.png'  mode="widthFix"></image>
+</view>
+          <button bindtap='touchdown_plugin' class="{{status==0? 'button-submit':'no-clicking'}}" style="opacity: 0;">
+  {{status==1? '录音中...':'开始录音'}}</button>
+        </view>
+<view style="position:relative">
+            <view class="bjimg" style="width: 80%;height:0;position:absolute;top:0;left:10%">
+  <image style="width: 100%;"  src='{{imgurl}}/jsly.png'  mode="widthFix"></image>
+</view>
+  <button bindtap='touchup_plugin' class="button-submit" style="opacity: 0;">结束录音</button>
+</view>
+<view style="position:relative">
+            <view class="bjimg" style="width: 40%;height:0;position:absolute;top:0;left:30%">
+  <image style="width: 100%;"  src='{{imgurl}}/jaojuan.png'  mode="widthFix"></image>
+</view>
+  <button bindtap='submit' class="button-submit" style="opacity: 0;">交卷</button>
+</view>

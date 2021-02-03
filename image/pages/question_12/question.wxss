@@ -1,0 +1,144 @@
+.baseInfo {
+  padding: 30rpx;
+}
+
+.baseInfo text {
+  font-size: 40rpx;
+  color: #6f6f6f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.info text {
+  font-size: 40rpx;
+}
+
+.info input {
+  text-align: right;
+}
+
+.paly-icon1 {
+  margin-top: 180rpx;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.paly-icon2 {
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button::after {
+  border: none;
+}
+
+.upper {
+  float: left;
+  padding-left: 0px;
+  padding-top: 5px;
+  color: #0000ff;
+  border: none;
+  background-color: white;
+  border-color: white;
+}
+
+.next {
+  float: right;
+  padding-top: 5px;
+  padding-right: 0;
+  color: #0000ff;
+  border: none;
+  background-color: white;
+  border-color: white;
+}
+
+.dis-upper {
+  float: left;
+  padding-top: 5px;
+  padding-left: 0;
+  color: #999ca0;
+  background-color: white;
+  border-color: white;
+  pointer-events: none;
+}
+
+.dis-next {
+  float: right;
+  padding-top: 5px;
+  padding-right: 0;
+  color: #999ca0;
+  background-color: white;
+  border-color: white;
+  pointer-events: none;
+}
+
+.button-icon {
+  margin: 0rpx auto 40px;
+  background-color: #0066cc;
+  border-radius: 200px;
+  color: white;
+  font-family: 黑体;
+  font-size: x-large;
+  text-align: center;
+}
+
+.button-dis-icon {
+  margin: 180rpx 40px 20px 40px;
+  background-color: #999ca0;
+  border-radius: 200px;
+  color: white;
+  font-family: 黑体;
+  font-size: x-large;
+  text-align: center;
+  pointer-events: none;
+}
+
+.button-end {
+  margin: 20rpx 40px 20px 40px;
+  background-color: #0066cc;
+  border-radius: 200px;
+  color: white;
+  font-family: 黑体;
+  font-size: x-large;
+  text-align: center;
+}
+
+
+/*父元素-父盒子*/
+ 
+.father-list{
+  margin-top: 20px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ 
+/*子元素-子盒子*/
+ 
+.son-item{
+  width:20%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius:10rpx;
+  margin-top:15rpx;
+}

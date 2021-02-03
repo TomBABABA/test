@@ -1,0 +1,50 @@
+<!--pages/question5.2.wxml-->
+<view bindtap="gotoQues" class="button-submit">
+  <van-notice-bar left-icon="volume-o" speed="10" text="{{question}}"></van-notice-bar>
+</view>
+
+<van-dialog id="van-dialog" />
+<view>
+  <button style="width:120px" class="{{status == 1? 'dis-upper':'upper'}}" bindtap='gotoUpperQues'>{{'<'}}上一题</button>
+</view>
+<view>
+  <button style="width:120px" class="{{status == 1? 'dis-next':'next'}}" bindtap='gotoNextQues'>下一题{{'>'}}</button>
+</view>
+<view class="page-row">
+  <button class="button-coin" bindtap="addOne" >
+    <text>1</text>
+  </button>
+  <button class="button-coin" bindtap="addFive" >
+    <text>5</text>
+  </button>
+  <button class="button-coin" bindtap="addTen" >
+    <text>10</text>
+  </button>
+</view>
+<view class="page-row">
+  <view class="result">
+      <input model:value="{{a}}" class="textnormal"  type="number"   disabled="true"/>
+  </view>
+  <button class="delButton" bindtap="D1">
+    <image src="https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/deleteone.png" mode="aspectFit"></image>
+  </button>
+</view>
+<view class="page-row">
+  <view class="result">
+      <input model:value="{{b}}" class="textnormal"  type="number"   disabled="true"/>
+    </view>
+    <button class="delButton" bindtap="D2">
+      <image src="https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/deleteone.png" mode="aspectFit"></image>
+  </button>
+</view>
+<view class="page-row">
+  <view class="result">
+      <input model:value="{{c}}" class="textnormal"  type="number"   disabled="true"/>
+    </view>
+    <button class="delButton" bindtap="D3">
+      <image src="https://cdn.jsdelivr.net/gh/HiSecret/images@main/ad/deleteone.png" mode="aspectFit"></image>
+  </button>
+</view>
+<button class="button-ensure" bindtap="tapOne">
+  <text>确认</text>
+</button>

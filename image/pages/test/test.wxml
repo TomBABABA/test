@@ -1,0 +1,85 @@
+<view class="page">
+  <!--标题-->
+  <view class="page__hd">
+    <view class="page__title">
+      {{questionList[shuffleIndex[index]].question}}
+      <!-- {{questionList[shuffleIndex[index]].type==1||questionList[shuffleIndex[index]].type==3?"【单选】":"【多选】"}}
+      （{{questionList[shuffleIndex[index]].scores}}分） -->
+    </view>
+  </view>
+  <!--内容-->
+  <view class="page__bd">
+    <radio-group
+      class="radio-group"
+      bindchange="radioChange"
+      wx:if="{{questionList[shuffleIndex[index]].type == 1}}"
+    >
+      <label
+        class="radio my-choosebox"
+        wx:for="{{questionList[shuffleIndex[index]].option}}"
+        wx:for-index="key"
+        wx:for-item="value"
+      >
+        <radio
+          value="{{key}}"
+          checked="{{questionList[shuffleIndex[index]].checked}}"
+        />{{key}}、{{value}}
+      </label>
+    </radio-group>
+    <checkbox-group
+      bindchange="checkboxChange"
+      wx:elif="{{questionList[shuffleIndex[index]].type == 2}}"
+    >
+      <label
+        class="checkbox my-choosebox"
+        wx:for="{{questionList[shuffleIndex[index]].option}}"
+        wx:for-index="key"
+        wx:for-item="value"
+      >
+        <checkbox
+          value="{{key}}"
+          checked="{{questionList[shuffleIndex[index]].checked}}"
+        />{{key}}、{{value}}
+      </label>
+    </checkbox-group>
+    <radio-group class="radio-group" bindchange="radioChange" wx:else>
+      <label
+        class="radio my-choosebox"
+        wx:for="{{questionList[shuffleIndex[index]].option}}"
+      >
+        <radio
+          value="{{item}}"
+          checked="{{questionList[shuffleIndex[index]].checked}}"
+        />{{item}}
+      </label>
+    </radio-group>
+  </view>
+  <!--home-->
+  <view class="inaver _30f2b4d" style="background:{{background}};color:{{getColor}}">
+    <view class="left _30f2b4d" catchtap="goBack">
+      <image class="icon _30f2b4d" src="/image/me-unselect.png"/>
+    </view>
+    <view class="center _30f2b4d">
+      <!-- 自定义区域 -->
+      
+      
+    </view>
+    <view class="right _30f2b4d">
+      <!-- 保护右上角胶囊不被污染 -->
+    </view>
+  </view>
+  <view  class="protect-inaver _30f2b4d">
+  </view>
+  <!--按钮-->
+  <view class="page_ft">
+    <view class="mybutton">
+      <button bindtap="nextSubmit"   wx:if="{{index == questionList.length-1}}">
+        提交
+      </button>
+      <button class="textnext" bindtap="nextSubmit" wx:else>
+      <i>></i>
+      下一题</button>
+      <text  bindtap="outTest" class="toindex-btn textback">退出</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+  <view class="page-title">请选择量表试题：</view>
+  <view class="flex-box">
+    <view class="flex-item">
+      <view class="item bc_yellow" bindtap="toTestPage" data-testId="102">焦虑自测量表 SAS</view>
+    </view>
+    <view class="flex-item">
+      <view class="item bc_blue" bindtap="toTestPage" data-testId="104">抑郁自测量表 SDS</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,88 @@
+/**index.wxss**/
+
+view {
+  box-sizing: border-box;
+}
+.container{
+  margin: 0rpx auto;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+  position: absolute;
+  width: 100rpx;
+  height:90rpx;
+  line-height: 90rpx;
+  border: 3rpx solid #070606;
+  border-radius: 150rpx;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+}
+.buttonbg{
+  background-color: #e9f1f6;
+  border: 5rpx solid #faca82;
+  width: 100%;
+  height: 1100rpx;
+  margin: 0rpx auto;
+}
+.container{
+  margin: 0 auto;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.text{
+  width:100%;
+  height: 60rpx;
+  margin:25rpx 0 25rpx 0;
+  color: blue;
+}
+.clearBtn{
+  width:60rpx;
+  height:60rpx;
+  float: right;
+  padding:0;
+  margin:0 60rpx;
+  line-height:60rpx;
+  font-size:30rpx;
+  background:none;
+}
+.clearBtn image{
+  width:100%;
+  height:100%;
+}
+.buttonshe{
+  margin-top: 100rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.viewR{
+  display: flex;
+  flex-direction: row;
+  height: 60rpx;
+  float: right;
+  margin: 0 0rpx;
+}
+.viewL{
+  display: flex;
+  flex-direction: row;
+  width: 250rpx;
+  height: 60rpx;
+  float: left;
+  margin: 0 30rpx;
+  margin-left: 0px;
+}
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+ margin:0 30rpx;
+}
+
